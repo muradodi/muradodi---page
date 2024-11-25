@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/stylegeneros.css">
+    <link rel="stylesheet" href="./CSS/stylemodelo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <div class="navbar-brand" id="nome">
+          <h1>Eternal<span>Beats</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvFlL9KA0EQh78UoiDB3kqwttH4j7xDsFRIYZlHsLFJl8cQxc5ChDxBhBgUGytb+0CihRFRb3QThmUut5vL4ZQ7d79vZn6zW6LgKBWsTwjgCVgFLoFz4C6mqBDAtyf47EBnwEsWLAZwBdSABSXaAS5cd68WLAYg364Ah0AdqMJkxCPgxnXWBj7HsFiALnLNgY4T4XWVEM825gHQsF1AQA13OCk8TwfWyMcL8b+ACrAHvCezlM3p+21PWc3MDprAqRIYuM2Ro5nGqX+S1ZObmha5AQ/AZpGAIVBOAchFWjJymX7ptuUR20kBdIF9LxfklwYcuTfFYhwA1yoR7JdvnF+VaJ4ALY96n7w9WyF+WZux7cbxBdwCj4bQG7CcAvgAFmPeIkunB0ghVoiXclF/I2S3LZFgv2YFCDTIrzwAgWT6lRcwZZH+Uj/VrkMZbux0EgAAAABJRU5ErkJggg=="/></h1> 
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./generos.html">Gêneros</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./formulario.html">Formulário</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./generos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vá Direto</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blues.html">Blues</a></li>
+                  <li><a class="dropdown-item" href="./bossanova.html">Bossa Nova</a></li>
+                  <li><a class="dropdown-item" href="./funk.html">Funk</a></li>
+                  <li><a class="dropdown-item" href="./funkcarioca.html">Funk Carioca</a></li>
+                  <li><a class="dropdown-item" href="./hardrock.html">Hard Rock</a></li>
+                  <li><a class="dropdown-item" href="./jazz.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="./metal.html">Metal</a></li>
+                  <li><a class="dropdown-item" href="./mpb.html">MPB</a></li>
+                  <li><a class="dropdown-item" href="./pagode.html">Pagode</a></li>
+                  <li><a class="dropdown-item" href="./pop.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="./rap.html">Rap</a></li>
+                  <li><a class="dropdown-item" href="./reggae.html">Reggae</a></li>
+                  <li><a class="dropdown-item" href="./rock.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="./samba.html">Samba</a></li>
+                  <li><a class="dropdown-item" href="./sertanejo.html">Sertanejo</a></li>
+                  <li><a class="dropdown-item" href="./surfmusic.html">Surf Music</a></li>
+                  <li><a class="dropdown-item" href="./trap.html">Trap</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgtJREFUSEu11cvrTVEYxvHPDxnIpSiXkpAwcFcycAlFiJFyKRQJhQEx8AcQAxLCgEJS/gAZKYRMkBJRJJcBuUTu1/XWOjqO395nD85Zs3P22u93vc96nnd3aPPqaHN9ZYAhWI4FGJ8PcgvncRbPqhyuM0BvnMbikgK/cQ5r8KkM1AjogRsYg684hgN4lIsMx1asQ/e8dzq+F0EaAaewEk8xD/cKXhyHC+kAg7AP26oAxuIOfiSdpyD0HogjmImfuIL1eIUZuIRvGIYXnUHqOziITTiEzXnzduxtePE5JmbIGaxIkJ3Y3QzwECOy/nfrNi9B/O6SiyxCSLk6dTArdXIxdxYd/bfqO/iYThuX3BW/CjQdmgo/TpccXQxG39Tta7xBv2aA9+iFnghYlRV7P2S5+jcD3M6BmpwycLNK9eSkqclt17NMc5oB9qTQ7EjOOYqNFQEnU0ZWJXnCIFuaAUbifrZjzaZlnAjY5byhsOvGoB3P8X+CucmCDwoIE3LQBuS0b6gStNhTPyq+5JDtz8mO59FljIq16JaLxh1E6uOyS21ae9gHEaCFJfq8S7NoV5J0GSbl1M9G/P/PKhvX4flI6XzE7Pmc3XUNh/E25yCCFuM8XBhOikz8Xa344ETYrmI0YhpMw8saoRWAqBUhC0eNyvdzotWAqBeTd2n+frRUotJMtkqiQkjbAX8AH49iGTKeH0EAAAAASUVORK5CYII="/></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="grid-container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card">
+                    <a href="./blues.html">
+                        <img src="./IMG/mayer.jpg" alt="Blues Genre" class="card-img">
+                        <div class="card-title">Blues</div>
+                    </a>
+                </div>
+            </div>
+
+        <div class="col-md-2">
+              <div class="card">
+                  <a href="./bossanova.html">
+                      <img src="./IMG/caetano.jpg" alt="Bossa Nova Genre" class="card-img">
+                      <div class="card-title">Bossa Nova</div>
+                  </a>
+              </div>
+          </div>
+
+        <div class="col-md-2">
+            <div class="card">
+                <a href="./funk.html">
+                    <img src="./IMG/jamiroquai.jpg" alt="Funk Genre" class="card-img">
+                    <div class="card-title">Funk</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card">
+              <a href="./funkcarioca.html">
+                  <img src="./IMG/mckevinho.png" alt="Funk Carioca Genre" class="card-img">
+                  <div class="card-title">Funk Carioca</div>
+              </a>
+            </div>
+          </div>
+
+      <div class="col-md-2">
+        <div class="card">
+            <a href="./hardrock.html">
+                <img src="./IMG/ozzy.webp" alt="Hard Rock Genre" class="card-img">
+                <div class="card-title">Hard Rock</div>
+            </a>
+        </div>
+    </div>
+            
+      <div class="col-md-2">
+              <div class="card">
+                  <a href="./jazz.html">
+                      <img src="./IMG/stangetz.jpeg" alt="Jazz Genre" class="card-img">
+                      <div class="card-title">Jazz</div>
+                  </a>
+              </div>
+          </div>
+
+      <div class="col-md-2">
+            <div class="card">
+                <a href="./metal.html">
+                    <img src="./IMG/coreytaylor.jpg" alt="Metal Genre" class="card-img">
+                    <div class="card-title">Metal</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="card">
+              <a href="./mpb.html">
+                  <img src="./IMG/lenine.jpg" alt="MPB Genre" class="card-img">
+                  <div class="card-title">MPB</div>
+              </a>
+          </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="card">
+            <a href="./pagode.html">
+                <img src="./IMG/pericles.jpg" alt="Pagode Genre" class="card-img">
+                <div class="card-title">Pagode</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+          <a href="./pop.html">
+              <img src="./IMG/swift.jpg" alt="Pop Genre" class="card-img">
+              <div class="card-title">Pop</div>
+          </a>
+      </div>
+  </div>
+
+  <div class="col-md-2">
+    <div class="card">
+        <a href="./rap.html">
+            <img src="./IMG/eminem.jpg" alt="Rap Genre" class="card-img">
+            <div class="card-title">Rap</div>
+        </a>
+    </div>
+</div>
+
+<div class="col-md-2">
+  <div class="card">
+      <a href="./reggae.html">
+          <img src="./IMG/marley.jpg" alt="Reggae Genre" class="card-img">
+          <div class="card-title">Reggae</div>
+      </a>
+  </div>
+</div>
+
+<div class="col-md-2">
+  <div class="card">
+      <a href="./rock.html">
+          <img src="./IMG/slash.avif" alt="Rock Genre" class="card-img">
+          <div class="card-title">Rock</div>
+      </a>
+  </div>
+</div>
+
+<div class="col-md-2">
+  <div class="card">
+      <a href="./samba.html">
+          <img src="./IMG/thiaguinho.webp" alt="Samba Genre" class="card-img">
+          <div class="card-title">Samba</div>
+      </a>
+  </div>
+</div>
+
+<div class="col-md-2">
+  <div class="card">
+      <a href="./sertanejo.html">
+          <img src="./IMG/maiaraemaraisa.jpg" alt="Sertanejo Genre" class="card-img">
+          <div class="card-title">Sertanejo</div>
+      </a>
+  </div>
+</div>
+
+<div class="col-md-2">
+  <div class="card">
+      <a href="./surfmusic.html">
+          <img src="./IMG/jack.jpg" alt="Surf Music Genre" class="card-img">
+          <div class="card-title">Surf Music</div>
+      </a>
+  </div>
+</div>
+
+<div class="col-md-2">
+  <div class="card">
+      <a href="./trap.html">
+          <img src="./IMG/matue.webp" alt="Trap Genre" class="card-img">
+          <div class="card-title">Trap</div>
+      </a>
+  </div>
+</div>
+
+          </div>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

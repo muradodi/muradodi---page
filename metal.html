@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleheavymetal.css">
+    <link rel="stylesheet" href="./CSS/stylemodelo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+        <div class="container-fluid">
+        <div class="navbar-brand" id="nome">
+          <h1>Eternal<span>Beats</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvFlL9KA0EQh78UoiDB3kqwttH4j7xDsFRIYZlHsLFJl8cQxc5ChDxBhBgUGytb+0CihRFRb3QThmUut5vL4ZQ7d79vZn6zW6LgKBWsTwjgCVgFLoFz4C6mqBDAtyf47EBnwEsWLAZwBdSABSXaAS5cd68WLAYg364Ah0AdqMJkxCPgxnXWBj7HsFiALnLNgY4T4XWVEM825gHQsF1AQA13OCk8TwfWyMcL8b+ACrAHvCezlM3p+21PWc3MDprAqRIYuM2Ro5nGqX+S1ZObmha5AQ/AZpGAIVBOAchFWjJymX7ptuUR20kBdIF9LxfklwYcuTfFYhwA1yoR7JdvnF+VaJ4ALY96n7w9WyF+WZux7cbxBdwCj4bQG7CcAvgAFmPeIkunB0ghVoiXclF/I2S3LZFgv2YFCDTIrzwAgWT6lRcwZZH+Uj/VrkMZbux0EgAAAABJRU5ErkJggg=="/></h1> 
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./generos.html">Gêneros</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./formulario.html">Formulário</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./generos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vá Direto</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blues.html">Blues</a></li>
+                  <li><a class="dropdown-item" href="./bossanova.html">Bossa Nova</a></li>
+                  <li><a class="dropdown-item" href="./funk.html">Funk</a></li>
+                  <li><a class="dropdown-item" href="./funkcarioca.html">Funk Carioca</a></li>
+                  <li><a class="dropdown-item" href="./hardrock.html">Hard Rock</a></li>
+                  <li><a class="dropdown-item" href="./jazz.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="./metal.html">Metal</a></li>
+                  <li><a class="dropdown-item" href="./mpb.html">MPB</a></li>
+                  <li><a class="dropdown-item" href="./pagode.html">Pagode</a></li>
+                  <li><a class="dropdown-item" href="./pop.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="./rap.html">Rap</a></li>
+                  <li><a class="dropdown-item" href="./reggae.html">Reggae</a></li>
+                  <li><a class="dropdown-item" href="./rock.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="./samba.html">Samba</a></li>
+                  <li><a class="dropdown-item" href="./sertanejo.html">Sertanejo</a></li>
+                  <li><a class="dropdown-item" href="./surfmusic.html">Surf Music</a></li>
+                  <li><a class="dropdown-item" href="./trap.html">Trap</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgtJREFUSEu11cvrTVEYxvHPDxnIpSiXkpAwcFcycAlFiJFyKRQJhQEx8AcQAxLCgEJS/gAZKYRMkBJRJJcBuUTu1/XWOjqO395nD85Zs3P22u93vc96nnd3aPPqaHN9ZYAhWI4FGJ8PcgvncRbPqhyuM0BvnMbikgK/cQ5r8KkM1AjogRsYg684hgN4lIsMx1asQ/e8dzq+F0EaAaewEk8xD/cKXhyHC+kAg7AP26oAxuIOfiSdpyD0HogjmImfuIL1eIUZuIRvGIYXnUHqOziITTiEzXnzduxtePE5JmbIGaxIkJ3Y3QzwECOy/nfrNi9B/O6SiyxCSLk6dTArdXIxdxYd/bfqO/iYThuX3BW/CjQdmgo/TpccXQxG39Tta7xBv2aA9+iFnghYlRV7P2S5+jcD3M6BmpwycLNK9eSkqclt17NMc5oB9qTQ7EjOOYqNFQEnU0ZWJXnCIFuaAUbifrZjzaZlnAjY5byhsOvGoB3P8X+CucmCDwoIE3LQBuS0b6gStNhTPyq+5JDtz8mO59FljIq16JaLxh1E6uOyS21ae9gHEaCFJfq8S7NoV5J0GSbl1M9G/P/PKhvX4flI6XzE7Pmc3XUNh/E25yCCFuM8XBhOikz8Xa344ETYrmI0YhpMw8saoRWAqBUhC0eNyvdzotWAqBeTd2n+frRUotJMtkqiQkjbAX8AH49iGTKeH0EAAAAASUVORK5CYII="/></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h3>Metal</h3>
+
+      <div class="grid-container">
+        <div class="row">
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/amon-amarth.jpg" alt="Amon Amarth">
+                    <h2>Amon Amarth</h2>
+                    <ul class="songs">
+                        <li>Twilight of the Thunder God</li>
+                        <li>Death in Fire</li>
+                        <li>Varyags of Miklagaard</li>
+                        <li>Raven's Flight</li>
+                        <li>The Pursuit of Vikings</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/angra.jpg" alt="Angra">
+                    <h2>Angra</h2>
+                    <ul class="songs">
+                        <li>Carry On</li>
+                        <li>Wings of Reality</li>
+                        <li>Queen of the Night</li>
+                        <li>Black Widow's Web</li>
+                        <li>Blood Tears</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/death.jpg" alt="Death">
+                    <h2>Death</h2>
+                    <ul class="songs">
+                        <li>Pull the Plug</li>
+                        <li>Symbolic</li>
+                        <li>Zombie Ritual</li>
+                        <li>Voice of the Soul</li>
+                        <li>Crystal Mountain</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/helloween.jpg" alt="Helloween">
+                    <h2>Helloween</h2>
+                    <ul class="songs">
+                        <li>Future World</li>
+                        <li>Keeper of the Seven Keys</li>
+                        <li>I Want Out</li>
+                        <li>Power</li>
+                        <li>Eagle Fly Free</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/iron-maiden.jpg" alt="Iron Maiden">
+                    <h2>Iron Maiden</h2>
+                    <ul class="songs">
+                        <li>The Trooper</li>
+                        <li>Run to the Hills</li>
+                        <li>Fear of the Dark</li>
+                        <li>Hallowed Be Thy Name</li>
+                        <li>Aces High</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/korn.jpg" alt="Korn">
+                    <h2>Korn</h2>
+                    <ul class="songs">
+                        <li>Freak on a Leash</li>
+                        <li>Blind</li>
+                        <li>Got the Life</li>
+                        <li>Coming Undone</li>
+                        <li>Twisted Transistor</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/linkin-park.jpg" alt="Linkin Park">
+                    <h2>Linkin Park</h2>
+                    <ul class="songs">
+                        <li>In the End</li>
+                        <li>Crawling</li>
+                        <li>Somewhere I Belong</li>
+                        <li>Numb</li>
+                        <li>Faint</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/megadeth.jpg" alt="Megadeth">
+                    <h2>Megadeth</h2>
+                    <ul class="songs">
+                        <li>Symphony of Destruction</li>
+                        <li>Peace Sells</li>
+                        <li>A Tout Le Monde</li>
+                        <li>Hangar 18</li>
+                        <li>Tornado of Souls</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/meshuggah.jpg" alt="Meshuggah">
+                    <h2>Meshuggah</h2>
+                    <ul class="songs">
+                        <li>Bleed</li>
+                        <li>Demiurge</li>
+                        <li>Rational Gaze</li>
+                        <li>Broken Cog</li>
+                        <li>Future Breed Machine</li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/mudvayne.jpg" alt="Mudvayne">
+                    <h2>Mudvayne</h2>
+                    <ul class="songs">
+                        <li>Dig</li>
+                        <li>Not Falling</li>
+                        <li>Death Blooms</li>
+                        <li>Happy?</li>
+                        <li>World So Cold</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/pantera.jpg" alt="Pantera">
+                    <h2>Pantera</h2>
+                    <ul class="songs">
+                        <li>Cemetery Gates</li>
+                        <li>Walk</li>
+                        <li>Domination</li>
+                        <li>Fucking Hostile</li>
+                        <li>Drag the Waters</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/sepultura.jpg" alt="Sepultura">
+                    <h2>Sepultura</h2>
+                    <ul class="songs">
+                        <li>Roots Bloody Roots</li>
+                        <li>Refuse/Resist</li>
+                        <li>Arise</li>
+                        <li>Inner Self</li>
+                        <li>Territory</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/slayer.jpg" alt="Slayer">
+                    <h2>Slayer</h2>
+                    <ul class="songs">
+                        <li>Raining Blood</li>
+                        <li>Angel of Death</li>
+                        <li>South of Heaven</li>
+                        <li>War Ensemble</li>
+                        <li>Seasons in the Abyss</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/slipknot.jpg" alt="Slipknot">
+                    <h2>Slipknot</h2>
+                    <ul class="songs">
+                        <li>Duality</li>
+                        <li>Psychosocial</li>
+                        <li>Before I Forget</li>
+                        <li>Wait and Bleed</li>
+                        <li>Snuff</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-md-2">
+                <div class="card">
+                    <img src="./IMG/system-of-a-down.jpg" alt="System of a Down">
+                    <h2>System of a Down</h2>
+                    <ul class="songs">
+                        <li>Chop Suey!</li>
+                        <li> Toxicity</li>
+                        <li>Bounce</li>
+                        <li>Spiders</li>
+                        <li>BYOB</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+input[type="submit"] {
+    background-color: green;
+    font-size: 15px;
+}
+
+input[type="reset"] {
+    background-color: red;
+    font-size: 15px;
+}
+
+.fieldset1 {
+    margin-left: 30px;
+}
+
+.fieldset2 {
+    margin-left: 30px;
+}
+
+input {
+    background-color: rgb(224, 221, 221);
+}
+
+body {
+    font-size: 20px;
+}
+
+.botao {
+    margin-left: 30px;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(243, 190, 159)
+}
+

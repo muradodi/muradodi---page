@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleindex.css">
+    <link rel="stylesheet" href="./CSS/stylemodelo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <div class="navbar-brand" id="nome">
+          <h1>Eternal<span>Beats</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvFlL9KA0EQh78UoiDB3kqwttH4j7xDsFRIYZlHsLFJl8cQxc5ChDxBhBgUGytb+0CihRFRb3QThmUut5vL4ZQ7d79vZn6zW6LgKBWsTwjgCVgFLoFz4C6mqBDAtyf47EBnwEsWLAZwBdSABSXaAS5cd68WLAYg364Ah0AdqMJkxCPgxnXWBj7HsFiALnLNgY4T4XWVEM825gHQsF1AQA13OCk8TwfWyMcL8b+ACrAHvCezlM3p+21PWc3MDprAqRIYuM2Ro5nGqX+S1ZObmha5AQ/AZpGAIVBOAchFWjJymX7ptuUR20kBdIF9LxfklwYcuTfFYhwA1yoR7JdvnF+VaJ4ALY96n7w9WyF+WZux7cbxBdwCj4bQG7CcAvgAFmPeIkunB0ghVoiXclF/I2S3LZFgv2YFCDTIrzwAgWT6lRcwZZH+Uj/VrkMZbux0EgAAAABJRU5ErkJggg=="/></h1> 
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./generos.html">Gêneros</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./formulario.html">Formulário</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./generos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vá Direto</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blues.html">Blues</a></li>
+                  <li><a class="dropdown-item" href="./bossanova.html">Bossa Nova</a></li>
+                  <li><a class="dropdown-item" href="./funk.html">Funk</a></li>
+                  <li><a class="dropdown-item" href="./funkcarioca.html">Funk Carioca</a></li>
+                  <li><a class="dropdown-item" href="./hardrock.html">Hard Rock</a></li>
+                  <li><a class="dropdown-item" href="./jazz.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="./metal.html">Metal</a></li>
+                  <li><a class="dropdown-item" href="./mpb.html">MPB</a></li>
+                  <li><a class="dropdown-item" href="./pagode.html">Pagode</a></li>
+                  <li><a class="dropdown-item" href="./pop.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="./rap.html">Rap</a></li>
+                  <li><a class="dropdown-item" href="./reggae.html">Reggae</a></li>
+                  <li><a class="dropdown-item" href="./rock.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="./samba.html">Samba</a></li>
+                  <li><a class="dropdown-item" href="./sertanejo.html">Sertanejo</a></li>
+                  <li><a class="dropdown-item" href="./surfmusic.html">Surf Music</a></li>
+                  <li><a class="dropdown-item" href="./trap.html">Trap</a></li>
+
+                  
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgtJREFUSEu11cvrTVEYxvHPDxnIpSiXkpAwcFcycAlFiJFyKRQJhQEx8AcQAxLCgEJS/gAZKYRMkBJRJJcBuUTu1/XWOjqO395nD85Zs3P22u93vc96nnd3aPPqaHN9ZYAhWI4FGJ8PcgvncRbPqhyuM0BvnMbikgK/cQ5r8KkM1AjogRsYg684hgN4lIsMx1asQ/e8dzq+F0EaAaewEk8xD/cKXhyHC+kAg7AP26oAxuIOfiSdpyD0HogjmImfuIL1eIUZuIRvGIYXnUHqOziITTiEzXnzduxtePE5JmbIGaxIkJ3Y3QzwECOy/nfrNi9B/O6SiyxCSLk6dTArdXIxdxYd/bfqO/iYThuX3BW/CjQdmgo/TpccXQxG39Tta7xBv2aA9+iFnghYlRV7P2S5+jcD3M6BmpwycLNK9eSkqclt17NMc5oB9qTQ7EjOOYqNFQEnU0ZWJXnCIFuaAUbifrZjzaZlnAjY5byhsOvGoB3P8X+CucmCDwoIE3LQBuS0b6gStNhTPyq+5JDtz8mO59FljIq16JaLxh1E6uOyS21ae9gHEaCFJfq8S7NoV5J0GSbl1M9G/P/PKhvX4flI6XzE7Pmc3XUNh/E25yCCFuM8XBhOikz8Xa344ETYrmI0YhpMw8saoRWAqBUhC0eNyvdzotWAqBeTd2n+frRUotJMtkqiQkjbAX8AH49iGTKeH0EAAAAASUVORK5CYII="/></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div style="display: flex; align-items: center;justify-content: center; width: 100%;" id="gif">
+        <img src="./IMG/Eternal Beats.gif" id="gif">
+      </div>
+
+    <main role="main" class="container mt-5">
+      <div class="row">
+        <div class="col-md-6" id="esquerda">
+        <div class="conteudo">
+          <div class="logo" id="nome"> <h1>Eternal<span>Beats</span></h1> 
+          </div>
+            <h2>Bem-vindo ao Eternal Beats!</h2>
+            <p>Aqui, a música ganha vida através da diversidade de gêneros que a tornam única e especial. Se você é um apaixonado por melodias envolventes, 
+              ritmos contagiantes e letras que tocam a alma, este é o lugar perfeito para você. Nosso site oferece uma jornada sonora, onde você pode explorar
+               e descobrir novas faixas, artistas e tendências de diferentes estilos musicais.</p>
+            <p>Nossa missão é simplificar a busca por músicas através de uma experiência intuitiva e organizada por gêneros musicais.</p>
+              <p>Venha conosco nessa jornada sonora e descubra como a música pode transformar momentos e conectar corações!</p>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" id="carousel">
+            <div class="carousel-item active">
+              <div id="label1">
+              <img src="./IMG/jack-johnson.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 id="colorlabel1" >Descubra e Explore</h5>
+                <p id="colorlabel1">Navegue por nossas seções dedicadas a diferentes estilos, desde os clássicos imortais até as tendências contemporâneas.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="label2">
+              <img src="./IMG/john-mayer.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 id="colorlabel2">Artistas em Destaque</h5>
+                <p id="colorlabel2">Em nossa seção de artistas, você encontrará perfis de músicos de todos os gêneros. Conheça novos talentos e os clássicos que continuam a
+                influenciar gerações.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="label3">
+              <img src="./IMG/banda.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 id="colorlabel3">Por Que Escolher Música por Gênero?</h5>
+                <p id="colorlabel3">Porque aqui, cada gênero possui sua própria história e características únicas, e estamos aqui para guiá-lo nessa descoberta.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br>
+          </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.grid-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas, se necessário */
+    justify-content: center; /* Centraliza os cards */
+}
+
+.col-md-2 {
+    flex: 0 0 150px; /* Largura fixa para os cards */
+    margin: 10px; /* Espaçamento entre os cards */
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 220px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+
+
+.card a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: inherit; /* Herda a cor do elemento pai, garantindo que o texto mantenha a cor desejada */
+}
+
+.card a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+

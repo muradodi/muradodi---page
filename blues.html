@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleblues.css">
+    <link rel="stylesheet" href="./CSS/stylemodelo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+        <div class="container-fluid">
+        <div class="navbar-brand" id="nome">
+          <h1>Eternal<span>Beats</span> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvFlL9KA0EQh78UoiDB3kqwttH4j7xDsFRIYZlHsLFJl8cQxc5ChDxBhBgUGytb+0CihRFRb3QThmUut5vL4ZQ7d79vZn6zW6LgKBWsTwjgCVgFLoFz4C6mqBDAtyf47EBnwEsWLAZwBdSABSXaAS5cd68WLAYg364Ah0AdqMJkxCPgxnXWBj7HsFiALnLNgY4T4XWVEM825gHQsF1AQA13OCk8TwfWyMcL8b+ACrAHvCezlM3p+21PWc3MDprAqRIYuM2Ro5nGqX+S1ZObmha5AQ/AZpGAIVBOAchFWjJymX7ptuUR20kBdIF9LxfklwYcuTfFYhwA1yoR7JdvnF+VaJ4ALY96n7w9WyF+WZux7cbxBdwCj4bQG7CcAvgAFmPeIkunB0ghVoiXclF/I2S3LZFgv2YFCDTIrzwAgWT6lRcwZZH+Uj/VrkMZbux0EgAAAABJRU5ErkJggg=="/></h1> 
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./generos.html">Gêneros</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link active" aria-current="page" href="./formulario.html">Formulário</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./generos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vá Direto</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blues.html">Blues</a></li>
+                  <li><a class="dropdown-item" href="./bossanova.html">Bossa Nova</a></li>
+                  <li><a class="dropdown-item" href="./funk.html">Funk</a></li>
+                  <li><a class="dropdown-item" href="./funkcarioca.html">Funk Carioca</a></li>
+                  <li><a class="dropdown-item" href="./hardrock.html">Hard Rock</a></li>
+                  <li><a class="dropdown-item" href="./jazz.html">Jazz</a></li>
+                  <li><a class="dropdown-item" href="./metal.html">Metal</a></li>
+                  <li><a class="dropdown-item" href="./mpb.html">MPB</a></li>
+                  <li><a class="dropdown-item" href="./pagode.html">Pagode</a></li>
+                  <li><a class="dropdown-item" href="./pop.html">Pop</a></li>
+                  <li><a class="dropdown-item" href="./rap.html">Rap</a></li>
+                  <li><a class="dropdown-item" href="./reggae.html">Reggae</a></li>
+                  <li><a class="dropdown-item" href="./rock.html">Rock</a></li>
+                  <li><a class="dropdown-item" href="./samba.html">Samba</a></li>
+                  <li><a class="dropdown-item" href="./sertanejo.html">Sertanejo</a></li>
+                  <li><a class="dropdown-item" href="./surfmusic.html">Surf Music</a></li>
+                  <li><a class="dropdown-item" href="./trap.html">Trap</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAgtJREFUSEu11cvrTVEYxvHPDxnIpSiXkpAwcFcycAlFiJFyKRQJhQEx8AcQAxLCgEJS/gAZKYRMkBJRJJcBuUTu1/XWOjqO395nD85Zs3P22u93vc96nnd3aPPqaHN9ZYAhWI4FGJ8PcgvncRbPqhyuM0BvnMbikgK/cQ5r8KkM1AjogRsYg684hgN4lIsMx1asQ/e8dzq+F0EaAaewEk8xD/cKXhyHC+kAg7AP26oAxuIOfiSdpyD0HogjmImfuIL1eIUZuIRvGIYXnUHqOziITTiEzXnzduxtePE5JmbIGaxIkJ3Y3QzwECOy/nfrNi9B/O6SiyxCSLk6dTArdXIxdxYd/bfqO/iYThuX3BW/CjQdmgo/TpccXQxG39Tta7xBv2aA9+iFnghYlRV7P2S5+jcD3M6BmpwycLNK9eSkqclt17NMc5oB9qTQ7EjOOYqNFQEnU0ZWJXnCIFuaAUbifrZjzaZlnAjY5byhsOvGoB3P8X+CucmCDwoIE3LQBuS0b6gStNhTPyq+5JDtz8mO59FljIq16JaLxh1E6uOyS21ae9gHEaCFJfq8S7NoV5J0GSbl1M9G/P/PKhvX4flI6XzE7Pmc3XUNh/E25yCCFuM8XBhOikz8Xa344ETYrmI0YhpMw8saoRWAqBUhC0eNyvdzotWAqBeTd2n+frRUotJMtkqiQkjbAX8AH49iGTKeH0EAAAAASUVORK5CYII="/></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <h3>Blues</h3>
+
+
+      <div class="grid-container">
+        <div class="row">
+
+        <div class="col-md-2">
+          <div class="card">
+            <img src="./IMG/bb-king.webp" alt="B.B. King">
+            <h2>B.B. King</h2>
+            <ul class="songs">
+              <li>The Thrill Is Gone</li>
+              <li>Every Day I Have the Blues</li>
+              <li>Lucille</li>
+              <li>Why I Sing the Blues</li>
+              <li>Paying the Cost to Be the Boss</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-2">
+          <div class="card">
+            <img src="./IMG/muddy.jpg" alt="Muddy Waters">
+            <h2>Muddy Waters</h2>
+            <ul class="songs">
+              <li>Hoochie Coochie Man</li>
+              <li>Manish Boy</li>
+              <li>Rolling Stone</li>
+              <li>Got My Mojo Working</li>
+              <li>I'm Ready</li>
+            </ul>
+          </div>
+          </div>
+          
+          <div class="col-md-2">
+            <div class="card">
+              <img src="./IMG/robert-johnson.jpg" alt="Robert Johnson">
+              <h2>Robert Johnson</h2>
+              <ul class="songs">
+                <li>Cross Road Blues</li>
+                <li>Hellhound on My Trail</li>
+                <li>Sweet Home Chicago</li>
+                <li>Love in Vain</li>
+                <li>Stop Breakin' Down Blues</li>
+              </ul>
+            </div>
+            </div>
+            
+            <div class="col-md-2">
+              <div class="card">
+                <img src="./IMG/howlin-wolf.jpg" alt="Howlin' Wolf">
+                <h2>Howlin' Wolf</h2>
+                <ul class="songs">
+                  <li>Smokestack Lightning</li>
+                  <li>Wolf's Boogie</li>
+                  <li>Little Red Rooster</li>
+                  <li>Back Door Man</li>
+                  <li>Killing Floor</li>
+                </ul>
+              </div>
+              </div>
+              
+              <div class="col-md-2">
+                <div class="card">
+                  <img src="./IMG/elmore-james.jpg" alt="Elmore James">
+                  <h2>Elmore James</h2>
+                  <ul class="songs">
+                    <li>Dust My Broom</li>
+                    <li>The Sky Is Crying</li>
+                    <li>It Hurts Me Too</li>
+                    <li>Rolling and Tumbling</li>
+                    <li>Something Inside Me</li>
+                  </ul>
+                </div>
+                </div>
+                
+                <div class="col-md-2">
+                  <div class="card">
+                    <img src="./IMG/hooker.jpg" alt="John Lee Hooker">
+                    <h2>John Lee Hooker</h2>
+                    <ul class="songs">
+                      <li>Boom Boom</li>
+                      <li>I'm in the Mood</li>
+                      <li>Dimples</li>
+                      <li>Boogie Chillen</li>
+                      <li>Crawling King Snake</li>
+                    </ul>
+                  </div>
+                  </div>
+                  
+                  <div class="col-md-2">
+                    <div class="card">
+                      <img src="./IMG/stevie-ray.jpg" alt="Stevie Ray Vaughan">
+                      <h2>Stevie Ray Vaughan</h2>
+                      <ul class="songs">
+                        <li>Pride and Joy</li>
+                        <li>Texas Flood</li>
+                        <li>Voodoo Child (Slight Return)</li>
+                        <li>Crossfire</li>
+                        <li>Love Struck Baby</li>
+                      </ul>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-2">
+                      <div class="card">
+                        <img src="./IMG/albert.avif" alt="Albert King">
+                        <h2>Albert King</h2>
+                        <ul class="songs">
+                          <li>Born Under a Bad Sign</li>
+                          <li>I'll Play the Blues for You</li>
+                          <li>Crosscut Saw</li>
+                          <li>As the Years Go Passing By</li>
+                          <li>Finale</li>
+                        </ul>
+                      </div>
+                      </div>
+                      
+                      <div class="col-md-2">
+                        <div class="card">
+                          <img src="./IMG/buddy.jpg" alt="Buddy Guy">
+                          <h2>Buddy Guy</h2>
+                          <ul class="songs">
+                            <li>Feels Like Rain</li>
+                            <li>Stone Crazy</li>
+                            <li>Damn Right, I Got the Blues</li>
+                            <li>Mustang Sally</li>
+                            <li>Texas Louisiana</li>
+                          </ul>
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                          <div class="card">
+                            <img src="./IMG/Willie_Dixon.jpg" alt="Willie Dixon">
+                            <h2>Willie Dixon</h2>
+                            <ul class="songs">
+                              <li>Little Red Rooster</li>
+                              <li>Seventh Son</li>
+                              <li>I Can't Quit You Baby</li>
+                              <li>Hoochie Coochie Man</li>
+                              <li>My Babe</li>
+                            </ul>
+                          </div>
+                          </div>
+                          
+                          <div class="col-md-2">
+                            <div class="card">
+                              <img src="./IMG/JimmyReed.jpg" alt="Jimmy Reed">
+                              <h2>Jimmy Reed</h2>
+                              <ul class="songs">
+                                <li>Big Boss Man</li>
+                                <li>Honest I Do</li>
+                                <li>Shame, Shame, Shame</li>
+                                <li>Bright Lights, Big City</li>
+                                <li>You Got Me Dizzy</li>
+                              </ul>
+                            </div>
+                            </div>
+                            
+                            <div class="col-md-2">
+                              <div class="card">
+                                <img src="./IMG/Son_House.jpg" alt="Son House">
+                                <h2>Son House</h2>
+                                <ul class="songs">
+                                  <li>Death Letter Blues</li>
+                                  <li>Grinnin' in Your Face</li>
+                                  <li>John the Revelator</li>
+                                  <li>Levee Camp Blues</li>
+                                  <li>Preachin' Blues</li>
+                                </ul>
+                              </div>
+                              </div>
+                              
+                              <div class="col-md-2">
+                                <div class="card">
+                                  <img src="./IMG/Gary_Clark_Jr.jpg" alt="Gary Clark Jr.">
+                                  <h2>Gary Clark Jr.</h2>
+                                  <ul class="songs">
+                                    <li>Bright Lights</li>
+                                    <li>When My Train Pulls In</li>
+                                    <li>Come Together</li>
+                                    <li>Things Are Changin'</li>
+                                    <li>Travis County</li>
+                                  </ul>
+                                </div>
+                                </div>
+                                
+                                <div class="col-md-2">
+                                  <div class="card">
+                                    <img src="./IMG/keb.jpg" alt="Keb' Mo'">
+                                    <h2>Keb' Mo'</h2>
+                                    <ul class="songs">
+                                      <li>Am I Wrong</li>
+                                      <li>Life Is Beautiful</li>
+                                      <li>Victims of Comfort</li>
+                                      <li>Perpetual Blues Machine</li>
+                                      <li>She Just Wants to Dance</li>
+                                    </ul>
+                                  </div>
+                                  </div>
+                                  
+                                  <div class="col-md-2">
+                                    <div class="card">
+                                      <img src="./IMG/john-mayer.webp" alt="John Mayer">
+                                      <h2>John Mayer</h2>
+                                      <ul class="songs">
+                                        <li>Gravity</li>
+                                        <li>Out of My Mind</li>
+                                        <li>Heart of Life</li>
+                                        <li>Crossroads (Live)</li>
+                                        <li>Vultures</li>
+                                      </ul>
+                                    </div>
+                                    </div>
+                                    
+                                    
+    </div>
+    </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
